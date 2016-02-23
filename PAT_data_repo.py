@@ -55,7 +55,7 @@ process.source.lumisToProcess.extend(myLumis)
 
 #input file
 import FWCore.Utilities.FileUtils as FileUtils
-files2011data = FileUtils.loadListFromFile ('Electron2011data_500files_1.txt') 
+files2011data = FileUtils.loadListFromFile ('CMS_Run2011A_DoubleElectron_AOD_12Oct2013-v1_20000_file_index.txt') 
 readFiles = cms.untracked.vstring( *files2011data )
 process.source.fileNames = readFiles
 
