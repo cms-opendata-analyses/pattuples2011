@@ -1,6 +1,6 @@
-# Pattuples production from 2010 data
+# Pattuples production from 2011 data
 
-The exercise produces tuples created following the Physics Analysis Toolkit (pattuples) from the 2010 AOD data.
+The exercise produces tuples created following the Physics Analysis Toolkit (pattuples) from the 2011 AOD data.
 
 You need to work in a VM properly contextualized for CMS.
 
@@ -12,8 +12,8 @@ you need to create a working area and source a proper CMS environment.
 This step is only needed the first time.
 
 ```
-cmsrel CMSSW_4_2_8
-cd CMSSW_4_2_8/src
+cmsrel CMSSW_5_3_32
+cd CMSSW_5_3_32/src
 ```
 
 ## Sourcing the environment 
@@ -21,8 +21,6 @@ cd CMSSW_4_2_8/src
 This step is needed each time you want to run the exercise.
 
 ```
-source /cvmfs/cms.cern.ch/cmsset_default.sh
-cd CMSSW_4_2_8/src
 cmsenv
 ```
 
@@ -31,8 +29,15 @@ cmsenv
 Clone the repo:
 
 ```
-git clone https://github.com/ayrodrig/pattuples2010.git 
-cd pattuples2010
+git clone https://github.com/katilp/pattuples2011.git 
+cd pattuples2011
+```
+
+## Set the symbolic links to the condition database
+
+```
+ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
+ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db FT_53_LV5_AN1_RUNA.db
 ```
 
 Run: 
@@ -41,6 +46,5 @@ Run:
 cmsRun PAT_data_repo.py 
 ```
 
-In this case the pattuples production was splitted in 6 executions per dataset (Mu and Electron);
-each runs over aprox. 500 files. An example of the partition is found in the Mu2010data* and Electron2010data* files.
+The number of events is set to 1000 events for testing. Set it to -1 in order to run over all events.
 
