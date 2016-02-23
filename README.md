@@ -46,6 +46,5 @@ Run:
 cmsRun PAT_data_repo.py 
 ```
 
-In this case the pattuples production was splitted in some executions per dataset (DoubleMu and DoubleElectron);
-each runs over aprox. 100 files. 
+The number of events is set to 1000 events for testing. Set it to -1 in order to run over all events.
 
