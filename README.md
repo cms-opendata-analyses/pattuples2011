@@ -1,4 +1,4 @@
-# Pattuples production from 2010 data
+# Pattuples production from 2011 data
 
 The exercise produces tuples created following the Physics Analysis Toolkit (pattuples) from the 2010 AOD data.
 
@@ -12,17 +12,15 @@ you need to create a working area and source a proper CMS environment.
 This step is only needed the first time.
 
 ```
-cmsrel CMSSW_4_2_8
-cd CMSSW_4_2_8/src
+cmsrel CMSSW_5_3_32
+cd CMSSW_5_3_32/src
 ```
 
 ## Sourcing the environment 
 
 This step is needed each time you want to run the exercise.
 
-```
-source /cvmfs/cms.cern.ch/cmsset_default.sh
-cd CMSSW_4_2_8/src
+``
 cmsenv
 ```
 
@@ -31,8 +29,8 @@ cmsenv
 Clone the repo:
 
 ```
-git clone https://github.com/ayrodrig/pattuples2010.git 
-cd pattuples2010
+git clone https://github.com/katilp/pattuples2011.git 
+cd pattuples2011
 ```
 
 Run: 
@@ -41,6 +39,6 @@ Run:
 cmsRun PAT_data_repo.py 
 ```
 
-In this case the pattuples production was splitted in 6 executions per dataset (Mu and Electron);
-each runs over aprox. 500 files. An example of the partition is found in the Mu2010data* and Electron2010data* files.
+In this case the pattuples production was splitted in some executions per dataset (DoubleMu and DoubleElectron);
+each runs over aprox. 100 files. 
 
