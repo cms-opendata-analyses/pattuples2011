@@ -1,18 +1,19 @@
-## This file is part of pattuples2010.
-## Copyright (C) 2014 Instituto de Fisica de Cantabria and CERN.
+## This file is part of pattuples2011.
+## Copyright (C) 2014  Instituto de Fisica de Cantabria and CERN.
+## Copyright (C) 2016  Helsinki Institute of Physics and CERN
 
-## pattuples2010 is free software: you can redistribute it and/or modify
+## pattuples2011 is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
 ## the Free Software Foundation, either version 3 of the License, or
 ## (at your option) any later version.
 ##
-## pattuples2010 is distributed in the hope that it will be useful,
+## pattuples2011 is distributed in the hope that it will be useful,
 ## but WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ## GNU General Public License for more details.
 
 ## You should have received a copy of the GNU General Public License
-## along with pattuples2010. If not, see <http://www.gnu.org/licenses/>.
+## along with pattuples2011. If not, see <http://www.gnu.org/licenses/>.
 
 ## import skeleton process
 from PhysicsTools.PatAlgos.patTemplate_cfg import *
