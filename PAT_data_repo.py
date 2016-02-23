@@ -43,19 +43,20 @@ process.p = cms.Path(
 ## ------------------------------------------------------
 #
 #globaltag
-process.GlobalTag.globaltag = 'GR_R_42_V25::All' 
+process.GlobalTag.connect = cms.string('sqlite_file:/cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db')
+process.GlobalTag.globaltag = 'FT_53_LV5_AN1::All'
 
 #luminosity
 import FWCore.ParameterSet.Config as cms
-import PhysicsTools.PythonAnalysis.LumiList as LumiList
-myLumis = LumiList.LumiList(filename='Cert_136033-149442_7TeV_Apr21ReReco_Collisions10_JSON_v2.txt').getCMSSWString().split(',')
+import FWCore.PythonUtilities.LumiList as LumiList
+myLumis = LumiList.LumiList(filename='Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt').getCMSSWString().split(',')
 process.source.lumisToProcess = cms.untracked.VLuminosityBlockRange()
 process.source.lumisToProcess.extend(myLumis)
 
 #input file
 import FWCore.Utilities.FileUtils as FileUtils
-files2010data = FileUtils.loadListFromFile ('Electron2010data_500files_1.txt') 
-readFiles = cms.untracked.vstring( *files2010data )
+files2011data = FileUtils.loadListFromFile ('Electron2011data_500files_1.txt') 
+readFiles = cms.untracked.vstring( *files2011data )
 process.source.fileNames = readFiles
 
 #process.maxEvents.input = -1                                  ##  (e.g. -1 to run on all events)
