@@ -46,5 +46,5 @@ Run:
 cmsRun PAT_data_repo.py 
 ```
 
-The number of events is set to 1000 events for testing. Set it to -1 in order to run over all events.
+The number of events is set to 1000 events for testing. Set it to -1 in order to run over all events, and add the corresponding index files in PAT_data_repo.py.
 
