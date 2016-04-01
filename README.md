@@ -48,3 +48,5 @@ cmsRun PAT_data_repo.py
 
 The number of events is set to 1000 events for testing. Set it to -1 in order to run over all events, and add the corresponding index files in PAT_data_repo.py.
 
+Note that the first time you run the job on the CMS Open Data VM, it will read the condition data from /cvmfs area. It will take time (an example run of a 10 Mbs line took 45 mins), but it will only happen once as the files will be cached on your VM. 
+
