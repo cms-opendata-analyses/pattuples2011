@@ -1,6 +1,6 @@
 # Pattuples production from 2011 data
 
-The exercise produces tuples created following the Physics Analysis Toolkit (pattuples) from the 2011 AOD data.
+The exercise produces tuples created using the Physics Analysis Toolkit (PAT) from the 2011 AOD data.
 
 You need to work in a VM properly contextualized for CMS.
 
