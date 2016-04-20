@@ -33,7 +33,7 @@ git clone https://github.com/katilp/pattuples2011.git
 cd pattuples2011
 ```
 
-## Set the symbolic links to the condition database
+Set the symbolic links to the Global tag in the condition database
 
 ```
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
