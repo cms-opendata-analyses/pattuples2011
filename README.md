@@ -1,8 +1,8 @@
 # Pattuples production from 2011 data
 
-The exercise produces tuples created using the Physics Analysis Toolkit (PAT) from the 2011 AOD data.
+The exercise produces ntuples from the 2011 AOD data using the Physics Analysis Toolkit (PAT).
 
-You need to work in a VM properly contextualized for CMS.
+You need to work in a VM properly contextualized for CMS available on the CERN Open Data Portal.
 
 In order to run the PAT_data_repo.py to generate the pattuples 
 you need to create a working area and source a proper CMS environment.
