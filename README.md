@@ -29,7 +29,7 @@ cmsenv
 Clone the repo:
 
 ```
-git clone https://github.com/katilp/pattuples2011.git 
+git clone https://github.com/cms-opendata-analyses/pattuples2011
 cd pattuples2011
 ```
 
