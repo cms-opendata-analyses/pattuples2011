@@ -39,6 +39,12 @@ Set the symbolic links to the Global tag in the condition database
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db FT_53_LV5_AN1_RUNA.db
 ```
+Make sure the cms-opendata-conddb.cern.ch directory has actually expanded in your VM. One way of doing this is executing:
+
+```
+ls -l
+ls -l /cvmfs/
+```
 
 Run: 
 
