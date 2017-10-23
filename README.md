@@ -56,5 +56,5 @@ The number of events is set to 1000 events for testing. Set it to -1 in order to
 
 Note that the first time you run the job on the CMS Open Data VM, it will read the condition data from /cvmfs area. It will take time (an example run of a 10 Mbps line took 45 mins), but it will only happen once as the files will be cached on your VM. The job will not produce any output during this time, but you can check the ongoing processes with the command 'top' and you can monitor the progress of reading the condition data to the local cache with the command 'df'.
 
-Note 26.4.2016: If you are extending this example for jets, note that we are currently investigating a problem accessing jet energy corrections from the condition database. We hope to fix it soon!
+
 
